@@ -1,0 +1,350 @@
+*{box-sizing:border-box}
+
+/*-------GENERAL-------*/
+
+html, body {
+	min-height:100%;
+	height: 100%;
+	position:relative;
+	font-family: 'Roboto';
+}
+h1 {
+	margin:0;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.flowfix {
+	overflow:hidden;
+}
+img {
+	max-width: 100%;
+}
+.bg-work span, .bg-tools span, .bg-skills span { 
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+/*-------PAGES-------*/
+
+.page {
+	min-height:50%;
+}
+
+.p1,.p3 {
+	background:#D5D5D5; 
+}
+/*-------HEAD-------*/
+
+.bg-head {
+	height:50vh;
+	.h-container {
+		position: relative;
+		width:100%;
+		.side-left {
+			z-index: 5;
+			width:105%;
+			position:absolute;
+			left:-50%;
+			margin-top: 50px;
+		}
+		.side-right {
+			z-index: 5;
+			width:105%;
+			position:absolute;
+			right:-50%;
+			margin-top: 50px;
+		}
+		.mountain-front {
+			z-index: 4;
+			width:90%;
+			position:absolute;
+			bottom:5px;
+		}
+	}	
+}
+
+.bgh-1 {
+	background: linear-gradient(#2E536C, #DEAC60, #fff);
+}
+/*-------WORK-------*/
+
+.bg-work{
+	height:50vh;
+	position: relative;
+	text-align: center;
+}
+.bgw-1 {
+	background:#1C367F;
+	color:#555;
+}
+.bgw-2 {
+	background:#42527F;	
+}
+.p-content {
+	padding: 12px 65px;
+}
+.w-content {
+	vertical-align: middle;
+	display:inline-block;
+	max-width: 70%;
+	img {
+		transition: all 8s linear;
+		width: 100%;
+	}
+}
+.w-content:hover img{
+	transform: scale(1.2);
+}
+.overlay {
+	background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: all .2s ease-in-out .2s;
+    z-index: 1;
+}
+.w-content:hover .overlay {
+    opacity: 1;
+}
+.overlay-txt {
+    position: absolute;
+    width: 100%;
+    padding: 0 65px;
+    text-align: left;
+    top: -50%;
+    text-transform: uppercase;
+	transition: all .5s ease-in-out .2s;
+	z-index: 2;
+	h1{
+		font-weight: 700;
+    	font-size: 50px;
+	}
+	p {
+		font-weight: 200;
+		font-size: 20px;
+	}
+}
+.w-content:hover .overlay-txt {
+    top:30%;
+}
+
+/*-------TOOLS--------*/
+.bg-tools{
+	height:25vh;
+	position: relative;
+	text-align: center;
+}
+.bgt-1 {
+	background:#151826;
+	color:#555;
+}
+.bgt-2 {
+	background:#091026;
+	color:#555;
+}
+.tools-content {
+	vertical-align: middle;
+	display:inline-block;
+	width: 100%;
+}
+
+#tool-list {
+	margin:0 auto;
+	padding: 0 30px;
+	.item{
+	    padding: 30px 0px;
+	    margin: 5px auto;
+	    color: #FFF;
+	    border-radius: 3px;
+	    text-align: center;
+	    max-width:100px;
+    	img{
+    		max-width: 100%;
+    	}
+	}
+}
+
+/*-------QUI SUIS-JE--------*/
+.bg-skills{
+	height:50vh;
+	position: relative;
+	text-align: center;
+}
+.bgs-1 {
+	background:#151826;
+	color:#555;
+}
+.bgs-2 {
+	background:#091026;
+	color:#555;
+}
+.bgs-3 {
+	background:#151826;
+	color:#555;
+}
+.skills-content {
+	vertical-align: middle;
+	display:inline-block;
+	width: 100%;
+	.skills {
+		padding: 0 80px;
+		.bracket {
+		width:100px;
+		fill:#999;
+		margin-bottom: 20px;
+		}
+		.bracket-left, .bracket-right {
+			fill:#999;
+			padding: 20px 15px;
+			display: inline-block;
+			width:80px;
+			svg {
+				width:35px;
+			}
+		}
+		.bracket-right {
+			text-align: left;
+		}
+		.bracket-left {
+			text-align: right;
+		}
+		.web-design {
+			position:relative;
+			margin: 20px auto;
+			width:100px;
+			height: 100px;
+			.wd-viewport {
+				position:absolute;
+				left:-50%;
+				margin-left: 40px;
+				svg {
+				fill:#999;
+				width:130px;
+				}
+			}
+			.wd-content {
+				position:absolute;
+				left:-50%;
+				margin-left: 40px;
+				svg {
+				fill:#999;
+				width:130px;
+				}
+			}
+		}
+		.graphisme {
+			margin: 20px auto;
+			.pen{
+				svg {
+				  fill:#151826;
+				  margin: 0;
+				  width:130px;
+				  padding:5px;
+				 }
+				#pen {
+				  stroke: #999;
+				  stroke-width: 1;
+				  stroke-dasharray: 390;
+				  stroke-dashoffset: 390;
+				  animation:draw 4s linear forwards, colorMe 1.5s 1s linear forwards;
+				  animation-play-state:paused;
+				}
+				@keyframes draw {
+				  100% {stroke-dashoffset: 0;}
+				}
+				@keyframes colorMe {
+				  100% {fill: #999; }
+				}
+			}
+		}	
+		h3 {
+			color:#999;
+		}
+	}
+	
+}
+
+/*-------NAVBAR-------*/
+
+/*-------MENU SMARTPHONE-------*/
+
+.menu-opener {
+	position:fixed;
+	top:15px;
+	left:15px;
+	z-index:10;
+	i{
+		font-size: 2.5rem;
+		color:#333;
+	}
+}
+
+.menu--exit {
+	position:fixed;
+	z-index:11;
+	i{
+		color:#DADBDA;
+	}
+}
+
+.menu--open .menu-sidebar{
+	top: 0;
+	opacity: 1;
+}
+
+.menu-sidebar{
+	position: fixed;
+	z-index: 9;
+	top: -100%;
+	opacity: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(3,3,3,.9);
+	transition: all .3s ease-in-out;
+}
+
+.menu{
+	display: table; /*- pour centrer les elements du menu sous forme de tableau-*/
+	width: 100%;
+	height: 100%;
+}
+
+.menu ul{
+	margin: 0;
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+
+.menu li{
+	display: block;
+	margin: 15px 0;
+	text-align: center;
+}
+.menu li a{
+	color: #DADBDA;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 300;
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: #3175AE;
+}
+
+.menu li:first-child, .menu li:last-child {
+	font-weight: 100;
+	font-size: 20px;
+	color:#fff;
+}
+
+/*--------ANIMAIONS---------*/
+
