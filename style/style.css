@@ -20,6 +20,13 @@ h1 {
 img {
   max-width: 100%;
 }
+.bg-work span,
+.bg-tools span,
+.bg-skills span {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
 /*-------PAGES-------*/
 .page {
   min-height: 50%;
@@ -28,40 +35,69 @@ img {
 .p3 {
   background: #D5D5D5;
 }
+/*-------HEAD-------*/
+.bg-head {
+  height: 50vh;
+}
+.bg-head .h-container {
+  position: relative;
+  width: 100%;
+}
+.bg-head .h-container .side-left {
+  z-index: 5;
+  width: 105%;
+  position: absolute;
+  left: -50%;
+  margin-top: 50px;
+}
+.bg-head .h-container .side-right {
+  z-index: 5;
+  width: 105%;
+  position: absolute;
+  right: -50%;
+  margin-top: 50px;
+}
+.bg-head .h-container .mountain-front {
+  z-index: 4;
+  width: 90%;
+  position: absolute;
+  bottom: 5px;
+}
 /*-------WORK-------*/
 .bg-work {
   height: 50vh;
   position: relative;
   text-align: center;
 }
-.bg-tools {
-  height: 25vh;
-  position: relative;
-  text-align: center;
-}
 .bgw-1 {
-  background: #1C367F;
+  position: absolute;
+  z-index: -1;
+  width: 120%;
+  height: 120%;
+  top: -15px;
+  left: 0;
+  background: url(../images/work/bg1.jpg) no-repeat;
+  /*	background-position: -10px -30px;*/
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  /*	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);*/
   color: #555;
 }
 .bgw-2 {
-  background: #42527F;
+  background: url(../images/work/bg2.jpg) no-repeat;
 }
-.bgt-1 {
-  background: #151826;
-  color: #555;
+.bgw-3 {
+  background: url(../images/work/bg3.jpg) no-repeat;
 }
-.bgt-2 {
-  background: #091026;
+.bgw-4 {
+  background: url(../images/work/bg4.jpg) no-repeat;
   color: #555;
 }
 .p-content {
   padding: 12px 65px;
-}
-.bg-work span,
-.bg-tools span {
-  height: 100%;
-  vertical-align: middle;
-  display: inline-block;
 }
 .w-content {
   vertical-align: middle;
@@ -69,11 +105,14 @@ img {
   max-width: 70%;
 }
 .w-content img {
-  transition: all 8s linear;
+  -webkit-transition: all 8s linear;
+          transition: all 8s linear;
   width: 100%;
 }
 .w-content:hover img {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -84,8 +123,9 @@ img {
   height: 100%;
   color: #fff;
   opacity: 0;
-  transition: all 0.2s ease-in-out 0.2s;
-  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out 0.2s;
+          transition: all 0.2s ease-in-out 0.2s;
+  z-index: 2;
 }
 .w-content:hover .overlay {
   opacity: 1;
@@ -97,7 +137,8 @@ img {
   text-align: left;
   top: -50%;
   text-transform: uppercase;
-  transition: all 0.5s ease-in-out 0.2s;
+  -webkit-transition: all 0.5s ease-in-out 0.2s;
+          transition: all 0.5s ease-in-out 0.2s;
   z-index: 2;
 }
 .overlay-txt h1 {
@@ -111,13 +152,186 @@ img {
 .w-content:hover .overlay-txt {
   top: 30%;
 }
+/*-------TOOLS--------*/
+.bg-tools {
+  height: 25vh;
+  position: relative;
+  text-align: center;
+}
+.bgt-1 {
+  background: #151826;
+  color: #555;
+}
+.bgt-2 {
+  background: #091026;
+  color: #555;
+}
+.tools-content {
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+}
+#tool-list {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+#tool-list .item {
+  padding: 30px 0px;
+  margin: 5px auto;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 100px;
+}
+#tool-list .item img {
+  max-width: 100%;
+}
+/*-------QUI SUIS-JE--------*/
+.bg-skills {
+  height: 50vh;
+  position: relative;
+  text-align: center;
+}
+.bgs-1 {
+  background: #2C3E50;
+  color: #555;
+}
+.bgs-2 {
+  background: #E74C3C;
+  color: #555;
+}
+.bgs-3 {
+  background: #ECF0F1;
+  color: #555;
+}
+.bgs-4 {
+  background: #3498DB;
+  color: #555;
+}
+.skills-content {
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+}
+.skills-content .skills {
+  padding: 0 80px;
+}
+.skills-content .skills .wd-title,
+.skills-content .skills .wp-title,
+.skills-content .skills .skill-title {
+  color: #ECF0F1;
+}
+.skills-content .skills .bracket {
+  width: 100px;
+  fill: #999;
+  margin-bottom: 20px;
+}
+.skills-content .skills .bracket-left,
+.skills-content .skills .bracket-right {
+  fill: #ECF0F1;
+  padding: 20px 15px;
+  display: inline-block;
+  width: 80px;
+}
+.skills-content .skills .bracket-left svg,
+.skills-content .skills .bracket-right svg {
+  width: 35px;
+}
+.skills-content .skills .bracket-right {
+  text-align: left;
+}
+.skills-content .skills .bracket-left {
+  text-align: right;
+}
+.skills-content .skills .web-design {
+  position: relative;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+.skills-content .skills .web-design .wd-viewport {
+  position: absolute;
+  left: -50%;
+  margin-left: 40px;
+}
+.skills-content .skills .web-design .wd-viewport svg {
+  fill: #ECF0F1;
+  width: 130px;
+}
+.skills-content .skills .web-design .wd-content {
+  position: absolute;
+  left: -50%;
+  margin-left: 40px;
+}
+.skills-content .skills .web-design .wd-content svg {
+  fill: #ECF0F1;
+  width: 130px;
+}
+.skills-content .skills .graphisme {
+  margin: 20px auto;
+}
+.skills-content .skills .graphisme .pen svg {
+  fill: #ECF0F1;
+  margin: 0;
+  width: 130px;
+  padding: 5px;
+}
+.skills-content .skills .graphisme .pen #pen {
+  stroke: #555;
+  stroke-width: 1;
+  stroke-dasharray: 390;
+  stroke-dashoffset: 390;
+  -webkit-animation: draw 4s linear forwards, colorMe 1.5s 1s linear forwards;
+          animation: draw 4s linear forwards, colorMe 1.5s 1s linear forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes colorMe {
+  100% {
+    fill: #555;
+  }
+}
+@keyframes colorMe {
+  100% {
+    fill: #555;
+  }
+}
+.skills-content .skills .wordpress {
+  margin: 20px auto;
+}
+.skills-content .skills .wordpress .logo-wp {
+  text-align: center;
+}
+.skills-content .skills .wordpress .logo-wp .roll {
+  width: 130px;
+  margin: 0 auto;
+}
+.skills-content .skills .wordpress .logo-wp .roll svg path {
+  fill: #ECF0F1;
+}
+.skills-content .skills .wordpress .logo-wp .roll 100% {
+  fill: #999;
+}
+.skills-content .skills h3 {
+  color: #999;
+}
 /*-------NAVBAR-------*/
 /*-------MENU SMARTPHONE-------*/
 .menu-opener {
   position: fixed;
   top: 15px;
   left: 15px;
-  z-index: 4;
+  z-index: 10;
 }
 .menu-opener i {
   font-size: 2.5rem;
@@ -125,10 +339,10 @@ img {
 }
 .menu--exit {
   position: fixed;
-  z-index: 5;
+  z-index: 11;
 }
 .menu--exit i {
-  color: #fff;
+  color: #DADBDA;
 }
 .menu--open .menu-sidebar {
   top: 0;
@@ -136,14 +350,15 @@ img {
 }
 .menu-sidebar {
   position: fixed;
-  z-index: 2;
+  z-index: 9;
   top: -100%;
   opacity: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(3, 3, 3, 0.8);
-  transition: all 0.3s ease-in-out;
+  background: rgba(3, 3, 3, 0.9);
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 }
 .menu {
   display: table;
@@ -165,7 +380,7 @@ img {
   text-align: center;
 }
 .menu li a {
-  color: #fff;
+  color: #DADBDA;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 300;
@@ -179,4 +394,29 @@ img {
   font-weight: 100;
   font-size: 20px;
   color: #fff;
+}
+/*--------ANIMAIONS---------*/
+/*--------ORIENTATION ECRAN--------*/
+/* portrait */
+@media screen and (orientation: portrait) {
+  /* portrait-specific styles */
+}
+/* landscape */
+@media screen and (orientation: landscape) {
+  /* landscape-specific styles */
+  .bg-work {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+  .bg-tools {
+    height: 50vh;
+    position: relative;
+    text-align: center;
+  }
+  .bg-skills {
+    height: 50vh;
+    position: relative;
+    text-align: center;
+  }
 }
