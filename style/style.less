@@ -37,28 +37,35 @@ img {
 /*-------HEAD-------*/
 
 .bg-head {
-	height:50vh;
+	height:100vh;
+	background: url(../images/header-home/img-header-2.jpg) no-repeat fixed;
+	background-position: 50%;
+	background-size: cover;
 	.h-container {
 		position: relative;
 		width:100%;
-		.side-left {
-			z-index: 5;
-			width:105%;
-			position:absolute;
-			left:-50%;
-			margin-top: 50px;
-		}
-		.side-right {
-			z-index: 5;
-			width:105%;
-			position:absolute;
-			right:-50%;
-			margin-top: 50px;
-		}
-		.mountain-front {
-			z-index: 4;
-			width:90%;
-			position:absolute;
+		height: 100%;
+		opacity: 50%;
+		.logo-container{
+			position: absolute;
+			margin:auto;
+			top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    width: 80%;
+		    max-width: 650px;
+		    max-height:650px;
+		    .logo-figure, .logo-clock, .logo-stripes, .logo-elements, .logo-marker{
+		    	position: absolute;
+		    	margin:auto;
+		    	top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+		    	width: 100%;
+		    	height: 100%;
+		    } 
 		}
 	}	
 }
@@ -70,30 +77,28 @@ img {
 	position: relative;
 	text-align: center;
 }
-.bgw-1 {
+.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
 	position: absolute;
 	z-index: -1;
-	width:120%;
-	height:120%;
-	top:-15px;
-	left:0;
-	background:url(../images/work/bg1.jpg) no-repeat;
-/*	background-position: -10px -30px;*/
+	top:-20px;
+	left:-20px;
+ 	width:120%;
+ 	height: 120%;
+ 	background-size: cover;
 	filter: blur(10px);
-/*	-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);*/
+}
+.bgw-1 {
+	background:url(../images/work/bg1.jpg) no-repeat center;
 	color:#555;
 }
 .bgw-2 {
-	background:url(../images/work/bg2.jpg) no-repeat;
+	background:url(../images/work/bg2.jpg) no-repeat center;
 }
 .bgw-3 {
-	background:url(../images/work/bg3.jpg) no-repeat;
+	background:url(../images/work/bg3.jpg) no-repeat center;
 }
 .bgw-4 {
-	background:url(../images/work/bg4.jpg) no-repeat;
+	background:url(../images/work/bg4.jpg) no-repeat center;
 	color:#555;
 }
 
@@ -131,9 +136,13 @@ img {
 .overlay-txt {
     position: absolute;
     width: 100%;
+    margin: auto;
     padding: 0 65px;
     text-align: left;
-    top: -50%;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
     text-transform: uppercase;
 	transition: all .5s ease-in-out .2s;
 	z-index: 2;
@@ -391,20 +400,16 @@ img {
 
 /*--------ORIENTATION ECRAN--------*/
 
-/* portrait */
-@media screen and (orientation:portrait) {
-	/* portrait-specific styles */
-}
-/* landscape */
-@media screen and (orientation:landscape) {
-	/* landscape-specific styles */
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
 	.bg-work{
-		height:100vh;
+		height:50vh;
 		position: relative;
 		text-align: center;
 	}
 	.bg-tools{
-		height:50vh;
+		height:25vh;
 		position: relative;
 		text-align: center;
 	}
@@ -413,5 +418,282 @@ img {
 		position: relative;
 		text-align: center;
 	}
-
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+.bg-head {
+	.h-container {
+		.logo-container{
+		    max-width: 500px;
+		    max-height:500px; 
+		}
+	}	
+}	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2){
+	.bg-work{
+		height:100vh;
+		position: relative;
+		text-align: center;
+		.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
+			position: absolute;
+			z-index: -1;
+			top:-20px;
+			left:-20px;
+		 	width:150%;
+		 	height: 150%;
+		 	background-size: cover;
+			filter: blur(10px);
+		}
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+		.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
+			position: absolute;
+			z-index: -1;
+			top:-20px;
+			left:-20px;
+		 	width:150%;
+		 	height: 150%;
+		 	background-size: cover;
+			filter: blur(10px);
+		}
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* iPhone 6 (landscape)----------- */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2){
+.bg-head {
+	.h-container {
+		.logo-container{
+		    max-width: 450px;
+		    max-height:450px; 
+		}
+	}	
+}
+	.bg-work{
+		height:100vh;
+		position: relative;
+		text-align: center;
+		.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
+			position: absolute;
+			z-index: -1;
+			top:-20px;
+			left:-20px;
+		 	width:150%;
+		 	height: 150%;
+		 	background-size: cover;
+			filter: blur(10px);
+		}
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* iPhone 6 (portrait)----------- */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2){
+	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+		.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
+			position: absolute;
+			z-index: -1;
+			top:-20px;
+			left:-20px;
+		 	width:150%;
+		 	height: 150%;
+		 	background-size: cover;
+			filter: blur(10px);
+		}
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* iPhone 6 plus (landscape)----------- */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3){	
+.bg-head {
+	.h-container {
+		.logo-container{
+		    max-width: 450px;
+		    max-height:450px; 
+		}
+	}	
+}
+	.bg-work{
+		height:100vh;
+		position: relative;
+		text-align: center;
+		.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
+			position: absolute;
+			z-index: -1;
+			top:-20px;
+			left:-20px;
+		 	width:150%;
+		 	height: 150%;
+		 	background-size: cover;
+			filter: blur(10px);
+		}
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
+}
+ 
+/* iPhone 6 plus (portrait)----------- */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3){
+	.bg-work{
+		height:50vh;
+		position: relative;
+		text-align: center;
+		.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
+			position: absolute;
+			z-index: -1;
+			top:-20px;
+			left:-20px;
+		 	width:150%;
+		 	height: 150%;
+		 	background-size: cover;
+			filter: blur(10px);
+		}
+	}
+	.bg-tools{
+		height:25vh;
+		position: relative;
+		text-align: center;
+	}
+	.bg-skills{
+		height:50vh;
+		position: relative;
+		text-align: center;
+	}
 }

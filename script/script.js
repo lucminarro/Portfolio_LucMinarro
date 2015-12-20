@@ -52,20 +52,3 @@ $(window).scroll(function(){
 			$("#pen").css("animation-play-state", "running");
 		}
 	});
-
-/*if ($(window).width() <= 549) {
-    if($(window).scrollTop() > 600) {
-        // the animation that's executed
-        firstAnimation();
-    }
-} else if ($(window).width() > 549 && $(window).width() <= 991) {
-    if($(window).scrollTop() > 480){
-        // the animation that's executed
-        firstAnimation();
-    }
-} else {
-    if ($(window).scrollTop() > 450) {
-        // the animation that should be executed
-        firstAnimation();
-    }
-}*/
