@@ -1,40 +1,44 @@
 * {
   box-sizing: border-box;
 }
+
 /*-------GENERAL-------*/
-html,
-body {
+html, body {
   min-height: 100%;
   height: 100%;
   position: relative;
   font-family: 'Roboto';
 }
+
 h1 {
   margin: 0;
   font-weight: 400;
   text-transform: uppercase;
 }
+
 .flowfix {
   overflow: hidden;
 }
+
 img {
   max-width: 100%;
 }
-.bg-work span,
-.bg-tools span,
-.bg-skills span {
+
+.bg-work span, .bg-tools span, .bg-skills span {
   height: 100%;
   vertical-align: middle;
   display: inline-block;
 }
+
 /*-------PAGES-------*/
 .page {
   min-height: 50%;
 }
-.p1,
-.p3 {
+
+.p1, .p3 {
   background: #D5D5D5;
 }
+
 /*-------HEAD-------*/
 .bg-head {
   height: 100vh;
@@ -42,12 +46,14 @@ img {
   background-position: 50%;
   background-size: cover;
 }
+
 .bg-head .h-container {
   position: relative;
   width: 100%;
   height: 100%;
   opacity: 50%;
 }
+
 .bg-head .h-container .logo-container {
   position: absolute;
   margin: auto;
@@ -59,11 +65,8 @@ img {
   max-width: 650px;
   max-height: 650px;
 }
-.bg-head .h-container .logo-container .logo-figure,
-.bg-head .h-container .logo-container .logo-clock,
-.bg-head .h-container .logo-container .logo-stripes,
-.bg-head .h-container .logo-container .logo-elements,
-.bg-head .h-container .logo-container .logo-marker {
+
+.bg-head .h-container .logo-container .logo-figure, .bg-head .h-container .logo-container .logo-clock, .bg-head .h-container .logo-container .logo-stripes, .bg-head .h-container .logo-container .logo-elements, .bg-head .h-container .logo-container .logo-marker {
   position: absolute;
   margin: auto;
   top: 0;
@@ -73,16 +76,399 @@ img {
   width: 100%;
   height: 100%;
 }
+
+.bg-head .h-container .logo-container .logo-figure svg path, .bg-head .h-container .logo-container .logo-clock svg path, .bg-head .h-container .logo-container .logo-stripes svg path, .bg-head .h-container .logo-container .logo-elements svg path, .bg-head .h-container .logo-container .logo-marker svg path {
+  fill: #8E9191;
+}
+
+.bg-head .h-container .logo-container .logo-figure svg rect, .bg-head .h-container .logo-container .logo-clock svg rect, .bg-head .h-container .logo-container .logo-stripes svg rect, .bg-head .h-container .logo-container .logo-elements svg rect, .bg-head .h-container .logo-container .logo-marker svg rect {
+  fill: #8E9191;
+}
+
+.bg-head .h-container .logo-container .logo-figure svg polygon, .bg-head .h-container .logo-container .logo-clock svg polygon, .bg-head .h-container .logo-container .logo-stripes svg polygon, .bg-head .h-container .logo-container .logo-elements svg polygon, .bg-head .h-container .logo-container .logo-marker svg polygon {
+  fill: #8E9191;
+}
+
+.bg-head .h-container .logo-container .logo-clock {
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: clock 40s infinite;
+          animation: clock 40s infinite;
+}
+
+@-webkit-keyframes clock {
+  0% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  2.5% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  5% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+  7.5% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+  }
+  10% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  12.5% {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+  }
+  15% {
+    -webkit-transform: rotate(63deg);
+            transform: rotate(63deg);
+  }
+  17.5% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+  }
+  20% {
+    -webkit-transform: rotate(81deg);
+            transform: rotate(81deg);
+  }
+  22.5% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  25% {
+    -webkit-transform: rotate(99deg);
+            transform: rotate(99deg);
+  }
+  27.5% {
+    -webkit-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  30% {
+    -webkit-transform: rotate(117deg);
+            transform: rotate(117deg);
+  }
+  32.5% {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+  }
+  35% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+  }
+  40% {
+    -webkit-transform: rotate(153deg);
+            transform: rotate(153deg);
+  }
+  42.5% {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+  }
+  45% {
+    -webkit-transform: rotate(171deg);
+            transform: rotate(171deg);
+  }
+  47.5% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(189deg);
+            transform: rotate(189deg);
+  }
+  52.5% {
+    -webkit-transform: rotate(198deg);
+            transform: rotate(198deg);
+  }
+  55% {
+    -webkit-transform: rotate(207deg);
+            transform: rotate(207deg);
+  }
+  57.5% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+  }
+  60% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  62.5% {
+    -webkit-transform: rotate(234deg);
+            transform: rotate(234deg);
+  }
+  65% {
+    -webkit-transform: rotate(243deg);
+            transform: rotate(243deg);
+  }
+  67.5% {
+    -webkit-transform: rotate(252deg);
+            transform: rotate(252deg);
+  }
+  70% {
+    -webkit-transform: rotate(261deg);
+            transform: rotate(261deg);
+  }
+  72.5% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  75% {
+    -webkit-transform: rotate(279deg);
+            transform: rotate(279deg);
+  }
+  77.5% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+  }
+  80% {
+    -webkit-transform: rotate(297deg);
+            transform: rotate(297deg);
+  }
+  82.5% {
+    -webkit-transform: rotate(306deg);
+            transform: rotate(306deg);
+  }
+  85% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  87.5% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+  }
+  90% {
+    -webkit-transform: rotate(333deg);
+            transform: rotate(333deg);
+  }
+  92.5% {
+    -webkit-transform: rotate(342deg);
+            transform: rotate(342deg);
+  }
+  95% {
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  97.5% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(369deg);
+            transform: rotate(369deg);
+  }
+}
+
+@keyframes clock {
+  0% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  2.5% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  5% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+  7.5% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+  }
+  10% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  12.5% {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+  }
+  15% {
+    -webkit-transform: rotate(63deg);
+            transform: rotate(63deg);
+  }
+  17.5% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+  }
+  20% {
+    -webkit-transform: rotate(81deg);
+            transform: rotate(81deg);
+  }
+  22.5% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  25% {
+    -webkit-transform: rotate(99deg);
+            transform: rotate(99deg);
+  }
+  27.5% {
+    -webkit-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  30% {
+    -webkit-transform: rotate(117deg);
+            transform: rotate(117deg);
+  }
+  32.5% {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+  }
+  35% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+  }
+  40% {
+    -webkit-transform: rotate(153deg);
+            transform: rotate(153deg);
+  }
+  42.5% {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+  }
+  45% {
+    -webkit-transform: rotate(171deg);
+            transform: rotate(171deg);
+  }
+  47.5% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(189deg);
+            transform: rotate(189deg);
+  }
+  52.5% {
+    -webkit-transform: rotate(198deg);
+            transform: rotate(198deg);
+  }
+  55% {
+    -webkit-transform: rotate(207deg);
+            transform: rotate(207deg);
+  }
+  57.5% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+  }
+  60% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  62.5% {
+    -webkit-transform: rotate(234deg);
+            transform: rotate(234deg);
+  }
+  65% {
+    -webkit-transform: rotate(243deg);
+            transform: rotate(243deg);
+  }
+  67.5% {
+    -webkit-transform: rotate(252deg);
+            transform: rotate(252deg);
+  }
+  70% {
+    -webkit-transform: rotate(261deg);
+            transform: rotate(261deg);
+  }
+  72.5% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  75% {
+    -webkit-transform: rotate(279deg);
+            transform: rotate(279deg);
+  }
+  77.5% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+  }
+  80% {
+    -webkit-transform: rotate(297deg);
+            transform: rotate(297deg);
+  }
+  82.5% {
+    -webkit-transform: rotate(306deg);
+            transform: rotate(306deg);
+  }
+  85% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  87.5% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+  }
+  90% {
+    -webkit-transform: rotate(333deg);
+            transform: rotate(333deg);
+  }
+  92.5% {
+    -webkit-transform: rotate(342deg);
+            transform: rotate(342deg);
+  }
+  95% {
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  97.5% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(369deg);
+            transform: rotate(369deg);
+  }
+}
+
+.bg-head .h-container .logo-container .logo-elements {
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 2.5s;
+          transition: transform 2.5s;
+}
+
+.bg-head .h-container .logo-container .logo-stripes {
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: stripes 120s infinite alternate;
+          animation: stripes 120s infinite alternate;
+}
+
+@-webkit-keyframes stripes {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes stripes {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /*-------WORK-------*/
 .bg-work {
   height: 50vh;
   position: relative;
   text-align: center;
 }
-.bgw-1,
-.bgw-2,
-.bgw-3,
-.bgw-4 {
+
+.bgw-1, .bgw-2, .bgw-3, .bgw-4 {
   position: absolute;
   z-index: -1;
   top: -20px;
@@ -93,38 +479,47 @@ img {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
+
 .bgw-1 {
   background: url(../images/work/bg1.jpg) no-repeat center;
   color: #555;
 }
+
 .bgw-2 {
   background: url(../images/work/bg2.jpg) no-repeat center;
 }
+
 .bgw-3 {
   background: url(../images/work/bg3.jpg) no-repeat center;
 }
+
 .bgw-4 {
   background: url(../images/work/bg4.jpg) no-repeat center;
   color: #555;
 }
+
 .p-content {
   padding: 12px 65px;
 }
+
 .w-content {
   vertical-align: middle;
   display: inline-block;
   max-width: 70%;
 }
+
 .w-content img {
   -webkit-transition: all 8s linear;
           transition: all 8s linear;
   width: 100%;
 }
+
 .w-content:hover img {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
+
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -138,9 +533,11 @@ img {
           transition: all 0.2s ease-in-out 0.2s;
   z-index: 2;
 }
+
 .w-content:hover .overlay {
   opacity: 1;
 }
+
 .overlay-txt {
   position: absolute;
   width: 100%;
@@ -156,40 +553,53 @@ img {
           transition: all 0.5s ease-in-out 0.2s;
   z-index: 2;
 }
+
 .overlay-txt h1 {
   font-weight: 700;
   font-size: 50px;
 }
+
 .overlay-txt p {
   font-weight: 200;
   font-size: 20px;
 }
+
 .w-content:hover .overlay-txt {
   top: 30%;
 }
+
 /*-------TOOLS--------*/
 .bg-tools {
   height: 25vh;
   position: relative;
   text-align: center;
 }
+
 .bgt-1 {
   background: #151826;
   color: #555;
 }
+
 .bgt-2 {
   background: #091026;
   color: #555;
 }
+
 .tools-content {
   vertical-align: middle;
   display: inline-block;
   width: 100%;
 }
+
+.tools-content h1 {
+  color: #8E9191;
+}
+
 #tool-list {
   margin: 0 auto;
   padding: 0 30px;
 }
+
 #tool-list .item {
   padding: 30px 0px;
   margin: 5px auto;
@@ -198,99 +608,117 @@ img {
   text-align: center;
   max-width: 100px;
 }
+
 #tool-list .item img {
   max-width: 100%;
 }
+
 /*-------QUI SUIS-JE--------*/
 .bg-skills {
   height: 50vh;
   position: relative;
   text-align: center;
 }
+
 .bgs-1 {
   background: #2C3E50;
   color: #555;
 }
+
 .bgs-2 {
   background: #E74C3C;
   color: #555;
 }
+
 .bgs-3 {
   background: #ECF0F1;
   color: #555;
 }
+
 .bgs-4 {
   background: #3498DB;
   color: #555;
 }
+
 .skills-content {
   vertical-align: middle;
   display: inline-block;
   width: 100%;
 }
+
 .skills-content .skills {
   padding: 0 80px;
 }
-.skills-content .skills .wd-title,
-.skills-content .skills .wp-title,
-.skills-content .skills .skill-title {
+
+.skills-content .skills .wd-title, .skills-content .skills .wp-title, .skills-content .skills .skill-title {
   color: #ECF0F1;
 }
+
 .skills-content .skills .bracket {
   width: 100px;
   fill: #999;
   margin-bottom: 20px;
 }
-.skills-content .skills .bracket-left,
-.skills-content .skills .bracket-right {
+
+.skills-content .skills .bracket-left, .skills-content .skills .bracket-right {
   fill: #ECF0F1;
   padding: 20px 15px;
   display: inline-block;
   width: 80px;
 }
-.skills-content .skills .bracket-left svg,
-.skills-content .skills .bracket-right svg {
+
+.skills-content .skills .bracket-left svg, .skills-content .skills .bracket-right svg {
   width: 35px;
 }
+
 .skills-content .skills .bracket-right {
   text-align: left;
 }
+
 .skills-content .skills .bracket-left {
   text-align: right;
 }
+
 .skills-content .skills .web-design {
   position: relative;
   margin: 20px auto;
   width: 100px;
   height: 100px;
 }
+
 .skills-content .skills .web-design .wd-viewport {
   position: absolute;
   left: -50%;
   margin-left: 40px;
 }
+
 .skills-content .skills .web-design .wd-viewport svg {
   fill: #ECF0F1;
   width: 130px;
 }
+
 .skills-content .skills .web-design .wd-content {
   position: absolute;
   left: -50%;
   margin-left: 40px;
 }
+
 .skills-content .skills .web-design .wd-content svg {
   fill: #ECF0F1;
   width: 130px;
 }
+
 .skills-content .skills .graphisme {
   margin: 20px auto;
 }
+
 .skills-content .skills .graphisme .pen svg {
   fill: #ECF0F1;
   margin: 0;
   width: 130px;
   padding: 5px;
 }
+
 .skills-content .skills .graphisme .pen #pen {
   stroke: #555;
   stroke-width: 1;
@@ -301,45 +729,56 @@ img {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
+
 @-webkit-keyframes draw {
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes draw {
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 @-webkit-keyframes colorMe {
   100% {
     fill: #555;
   }
 }
+
 @keyframes colorMe {
   100% {
     fill: #555;
   }
 }
+
 .skills-content .skills .wordpress {
   margin: 20px auto;
 }
+
 .skills-content .skills .wordpress .logo-wp {
   text-align: center;
 }
+
 .skills-content .skills .wordpress .logo-wp .roll {
   width: 130px;
   margin: 0 auto;
 }
+
 .skills-content .skills .wordpress .logo-wp .roll svg path {
   fill: #ECF0F1;
 }
+
 .skills-content .skills .wordpress .logo-wp .roll 100% {
   fill: #999;
 }
+
 .skills-content .skills h3 {
   color: #999;
 }
+
 /*-------NAVBAR-------*/
 /*-------MENU SMARTPHONE-------*/
 .menu-opener {
@@ -348,21 +787,26 @@ img {
   left: 15px;
   z-index: 10;
 }
+
 .menu-opener i {
   font-size: 2.5rem;
-  color: #333;
+  color: #8E9191;
 }
+
 .menu--exit {
   position: fixed;
   z-index: 11;
 }
+
 .menu--exit i {
   color: #DADBDA;
 }
+
 .menu--open .menu-sidebar {
   top: 0;
   opacity: 1;
 }
+
 .menu-sidebar {
   position: fixed;
   z-index: 9;
@@ -375,12 +819,14 @@ img {
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
 }
+
 .menu {
   display: table;
   /*- pour centrer les elements du menu sous forme de tableau-*/
   width: 100%;
   height: 100%;
 }
+
 .menu ul {
   margin: 0;
   padding: 0;
@@ -389,11 +835,13 @@ img {
   width: 100%;
   height: 100%;
 }
+
 .menu li {
   display: block;
   margin: 15px 0;
   text-align: center;
 }
+
 .menu li a {
   color: #DADBDA;
   text-transform: uppercase;
@@ -401,15 +849,17 @@ img {
   font-weight: 300;
   text-decoration: none;
 }
+
 .menu li a:hover {
   color: #3175AE;
 }
-.menu li:first-child,
-.menu li:last-child {
+
+.menu li:first-child, .menu li:last-child {
   font-weight: 100;
   font-size: 20px;
   color: #fff;
 }
+
 /*--------ANIMAIONS---------*/
 /*--------ORIENTATION ECRAN--------*/
 /* Smartphones (landscape) ----------- */
@@ -430,6 +880,7 @@ img {
     text-align: center;
   }
 }
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   .bg-work {
@@ -448,6 +899,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .bg-work {
@@ -466,6 +918,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .bg-head .h-container .logo-container {
@@ -488,6 +941,7 @@ img {
     text-align: center;
   }
 }
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .bg-work {
@@ -506,10 +960,8 @@ img {
     text-align: center;
   }
 }
+
 /* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* STYLES GO HERE */
-}
 /* iPhone 5 (landscape)----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-work {
@@ -517,10 +969,7 @@ img {
     position: relative;
     text-align: center;
   }
-  .bg-work .bgw-1,
-  .bg-work .bgw-2,
-  .bg-work .bgw-3,
-  .bg-work .bgw-4 {
+  .bg-work .bgw-1, .bg-work .bgw-2, .bg-work .bgw-3, .bg-work .bgw-4 {
     position: absolute;
     z-index: -1;
     top: -20px;
@@ -542,6 +991,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPhone 5 (portrait)----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-work {
@@ -549,10 +999,7 @@ img {
     position: relative;
     text-align: center;
   }
-  .bg-work .bgw-1,
-  .bg-work .bgw-2,
-  .bg-work .bgw-3,
-  .bg-work .bgw-4 {
+  .bg-work .bgw-1, .bg-work .bgw-2, .bg-work .bgw-3, .bg-work .bgw-4 {
     position: absolute;
     z-index: -1;
     top: -20px;
@@ -574,6 +1021,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPhone 6 (landscape)----------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-head .h-container .logo-container {
@@ -585,10 +1033,7 @@ img {
     position: relative;
     text-align: center;
   }
-  .bg-work .bgw-1,
-  .bg-work .bgw-2,
-  .bg-work .bgw-3,
-  .bg-work .bgw-4 {
+  .bg-work .bgw-1, .bg-work .bgw-2, .bg-work .bgw-3, .bg-work .bgw-4 {
     position: absolute;
     z-index: -1;
     top: -20px;
@@ -610,6 +1055,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPhone 6 (portrait)----------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-work {
@@ -617,10 +1063,7 @@ img {
     position: relative;
     text-align: center;
   }
-  .bg-work .bgw-1,
-  .bg-work .bgw-2,
-  .bg-work .bgw-3,
-  .bg-work .bgw-4 {
+  .bg-work .bgw-1, .bg-work .bgw-2, .bg-work .bgw-3, .bg-work .bgw-4 {
     position: absolute;
     z-index: -1;
     top: -20px;
@@ -642,6 +1085,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPhone 6 plus (landscape)----------- */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .bg-head .h-container .logo-container {
@@ -653,10 +1097,7 @@ img {
     position: relative;
     text-align: center;
   }
-  .bg-work .bgw-1,
-  .bg-work .bgw-2,
-  .bg-work .bgw-3,
-  .bg-work .bgw-4 {
+  .bg-work .bgw-1, .bg-work .bgw-2, .bg-work .bgw-3, .bg-work .bgw-4 {
     position: absolute;
     z-index: -1;
     top: -20px;
@@ -678,6 +1119,7 @@ img {
     text-align: center;
   }
 }
+
 /* iPhone 6 plus (portrait)----------- */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
   .bg-work {
@@ -685,10 +1127,7 @@ img {
     position: relative;
     text-align: center;
   }
-  .bg-work .bgw-1,
-  .bg-work .bgw-2,
-  .bg-work .bgw-3,
-  .bg-work .bgw-4 {
+  .bg-work .bgw-1, .bg-work .bgw-2, .bg-work .bgw-3, .bg-work .bgw-4 {
     position: absolute;
     z-index: -1;
     top: -20px;

@@ -48,7 +48,17 @@ $(function(){
 //-- LANCEMENT DE L'ANIMATION SVG AU SCROLL
 
 $(window).scroll(function(){
-		if($(window).scrollTop() > $('.bgs-3').offset().top - 600){
+		if($(window).scrollTop() > $('.bgs-3').offset().top - 600)
+    {
 			$("#pen").css("animation-play-state", "running");
 		}
 	});
+
+//--ROTATION LGOG HEADER
+
+var deg = 0;
+setInterval(function()
+{
+  deg += 90;
+  $('.logo-elements').css('transform', 'rotate(-'+deg+'deg)');
+}, 10000);
